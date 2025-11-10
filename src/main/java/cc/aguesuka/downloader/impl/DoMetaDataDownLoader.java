@@ -25,11 +25,11 @@ import java.util.logging.Logger;
 public class DoMetaDataDownLoader implements IMetaDataDownloader {
 
     @Config("bucket.self.id")
-    private byte[] id;
+    public byte[] id;
     @Config("peerDownload.timeout")
-    private int timeout;
+    public int timeout;
     @Config("DoMetaDataDownLoader.connectionTimeout")
-    private int connectionTimeout;
+    public int connectionTimeout;
 
     @Override
     public byte[]
